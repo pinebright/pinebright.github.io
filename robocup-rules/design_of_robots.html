@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>4. The Design of the Robots &mdash; RoboCup Soccer Humanoid League Rules and Setup 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="RoboCup Soccer Humanoid League Rules and Setup 1.0.0 documentation" href="index.html" />
+    <link rel="prev" title="3. The Number of Players" href="number_of_players.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="the-design-of-the-robots">
+<h1>4. The Design of the Robots<a class="headerlink" href="#the-design-of-the-robots" title="Permalink to this headline">¶</a></h1>
+<p>Robots participating in the Humanoid League competitions must have a human-like body plan, as shown in Fig. 4.
+They must consist of two legs, two arms, and one head, which are attached to a trunk.
+The robots must be able to stand upright on their feet and to walk on their legs.
+The only allowed modes of locomotion are bipedal walking and running.</p>
+<p>All actions of the robots must be kinematically equivalent to humanoid motions.</p>
+<div class="section" id="robot-height">
+<h2>4.1. Robot Height<a class="headerlink" href="#robot-height" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="htop-is-defined-as-the-height-of-the-robot-when-standing-upright-with-fully-extended-knees-cf-fig-4-right-and-hcom-denotes-the-height-of-the-robots-center-of-mass-measured-in-upright-posture">
+<h3>4.1.1. Htop is defined as the height of the robot when standing upright (with fully extended knees, cf. Fig. 4 right) and Hcom denotes the height of the robot’s center of mass, measured in upright posture.<a class="headerlink" href="#htop-is-defined-as-the-height-of-the-robot-when-standing-upright-with-fully-extended-knees-cf-fig-4-right-and-hcom-denotes-the-height-of-the-robots-center-of-mass-measured-in-upright-posture" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="based-on-htop-the-following-size-restrictions-apply">
+<h3>4.1.2. Based on Htop, the following size restrictions apply:<a class="headerlink" href="#based-on-htop-the-following-size-restrictions-apply" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>40cm ≤ Htop ≤ 90cm to play in the KidSize class,</li>
+<li>80cm ≤ Htop ≤ 140cm to play in the TeenSize class,</li>
+<li>130cm ≤ Htop ≤ 180cm to play in the AdultSize class.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="weight-restrictions">
+<h2>4.2. Weight Restrictions<a class="headerlink" href="#weight-restrictions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The maximum weight for robots allowed to play in the TeenSize class is 20 kg.</li>
+<li>The minimum weight for robots allowed to play in the AdultSize class is 10 kg.</li>
+</ul>
+</div>
+<div class="section" id="size-restrictions">
+<h2>4.3. Size Restrictions<a class="headerlink" href="#size-restrictions" title="Permalink to this headline">¶</a></h2>
+<p>All robots participating in the Humanoid League must comply with the following restric- tions:</p>
+<ol class="arabic simple">
+<li>Each foot must fit into a rectangle of area (2.2 · Hcom)2/32.</li>
+</ol>
+<p>#. Considering the rectangle enclosing the convex hull of the foot, the ratio between
+the longest side of the rectangle and the shortest one, shall not exceed 2.5.
+#. The robot must fit into a cylinder of diameter 0.55· Htop.
+#. The sum of the lengths of the two arms and the width of the torso at the shoulder must be less than 1.2· Htop.</p>
+<blockquote>
+<div>The length of an arm is defined as the sum of the maximum length of any link that forms part of the arm.
+Both arms must be the same length.</div></blockquote>
+<ol class="arabic simple">
+<li>The robot does not possess a configuration where it is extended longer than 1.5·Htop .</li>
+<li>The length of the legs Hleg, including the feet, satisfies 0.35·Htop ≤ Hleg ≤ 0.7·Htop .</li>
+<li>The height of the head Hhead, including the neck, satisfies 0.05·Htop ≤ Hhead ≤ 0.25·Htop.
+Hhead is defined as the vertical distance from the axis of the first arm joint at the shoulder to the top of the head.</li>
+<li>The leg length is measured while the robot is standing up straight.
+The length is measured from the first rotating joint where its axis lies in the plane parallel to the standing ground to the tip of the foot.</li>
+</ol>
+</div>
+<div class="section" id="sensors">
+<h2>4.4. Sensors<a class="headerlink" href="#sensors" title="Permalink to this headline">¶</a></h2>
+<p>Teams participating in the Humanoid League competitions are encouraged to equip their robots with sensors that have an equivalent in human senses.
+These sensors must be placed at a position roughly equivalent to the location of the human’s biological sensors.
+In particular,</p>
+<ol class="arabic simple">
+<li>The only active external sensor allowed is sound (“human-like” with respect to volume and frequency) with one loudspeaker on the robot.
+The loudspeaker may be placed in the head, neck or trunk of the robot.
+Any other active sensor (emitting light, sound, or electromagnetic waves into the environment in order to measure reflections) is not allowed.</li>
+<li>External2 sensors, such as cameras and up to two microphones, may not be placed in the legs or arms or the torso of the robots.
+They must be placed in the robot’s head and above any neck joint.</li>
+<li>The field of view of the robots is limited at any time to 180 degrees.
+This means that the maximum angle between any two points in the overlap of the field of view of all cameras mounted on the robot must be less than 180 degrees.
+Also the pan-tilt motion of the head and the cameras mounted on the robot’s head is restricted to be more human like not only with respect to the field of view but also to the range of motion of the neck joints.
+Therefore, the mechanism to pan the camera is limited to 270 degree pan which means ± 135 degrees from the position looking straight ahead.
+The mechanism to tilt the camera is limited to ± 90 degrees (measured from the horizontal line).
+Furthermore, if positioned at the center mark the robot may not be able to see both goals in any tilt angle and in any standing or walking posture of the robot.
+“Field of view” refers to the field of view of all cameras together and of how much of the soccer field all cameras together can view at most at one time.
+By how much the soccer field can be viewed by the robot at most one time is defined by a half sphere with its center axis pointing in the forward direction with respect to the robot’s frontal plane as shown in Figure 5.</li>
+<li>The number of cameras is limited to a stereo vision setup (i.e., max. 2 cameras with a large overlap) only. Monocular vision is also allowed.</li>
+<li>Touch sensors, force sensors, and temperature sensors may be placed at any posi- tion on the robot.</li>
+<li>Sensors inside the robot may measure all quantities of interest, including (but not limited to) voltages, currents, forces, movements, accelerations, magnetic field and rotational speeds.
+They can be at any position inside the robot.</li>
+</ol>
+</div>
+<div class="section" id="communication-and-control">
+<h2>4.5. Communication and Control<a class="headerlink" href="#communication-and-control" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="robots-participating-in-the-humanoid-league-competitions-must-act-autonomously-while-a-competition-is-running-no-external-power-supply-teleoperation-remote-control-or-remote-brain-of-any-kind-is-allowed">
+<h3>4.5.1. Robots participating in the Humanoid League competitions must act autonomously while a competition is running. No external power supply, teleoperation, remote control, or remote brain of any kind is allowed.<a class="headerlink" href="#robots-participating-in-the-humanoid-league-competitions-must-act-autonomously-while-a-competition-is-running-no-external-power-supply-teleoperation-remote-control-or-remote-brain-of-any-kind-is-allowed" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="robots-may-communicate-only-via-the-wireless-network-provided-by-the-organizers-which-must-support-the-referee-box-the-total-bandwidth-of-the-robots-belonging-to-one-team-may-not-exceed-1-mbit-s-the-robots-must-not-rely-on-availability-or-quality-of-the-wireless-network-they-must-be-able-to-play-if-the-network-is-not-available-or-of-low-quality-only-robots-are-allowed-to-communicate-by-wlan-any-other-computers-of-team-members-are-only-allowed-to-communicate-by-tethered-lan-no-other-wireless-communication-is-allowed-onsite-all-other-wireless-hardware-must-be-deactivated-a-team-may-be-disqualified-if-one-of-the-team-members-violates-this-rule">
+<h3>4.5.2. Robots may communicate only via the wireless network provided by the organizers which must support the referee box. The total bandwidth of the robots belonging to one team may not exceed 1 Mbit/s. The robots must not rely on availability or quality of the wireless network. They must be able to play if the network is not available or of low quality. Only robots are allowed to communicate by WLAN. Any other computers of team members are only allowed to communicate by tethered LAN. No other wireless communication is allowed onsite. All other wireless hardware must be deactivated. A team may be disqualified if one of the team members violates this rule.<a class="headerlink" href="#robots-may-communicate-only-via-the-wireless-network-provided-by-the-organizers-which-must-support-the-referee-box-the-total-bandwidth-of-the-robots-belonging-to-one-team-may-not-exceed-1-mbit-s-the-robots-must-not-rely-on-availability-or-quality-of-the-wireless-network-they-must-be-able-to-play-if-the-network-is-not-available-or-of-low-quality-only-robots-are-allowed-to-communicate-by-wlan-any-other-computers-of-team-members-are-only-allowed-to-communicate-by-tethered-lan-no-other-wireless-communication-is-allowed-onsite-all-other-wireless-hardware-must-be-deactivated-a-team-may-be-disqualified-if-one-of-the-team-members-violates-this-rule" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">4. The Design of the Robots</a><ul>
+<li><a class="reference internal" href="#robot-height">4.1. Robot Height</a><ul>
+<li><a class="reference internal" href="#htop-is-defined-as-the-height-of-the-robot-when-standing-upright-with-fully-extended-knees-cf-fig-4-right-and-hcom-denotes-the-height-of-the-robots-center-of-mass-measured-in-upright-posture">4.1.1. Htop is defined as the height of the robot when standing upright (with fully extended knees, cf. Fig. 4 right) and Hcom denotes the height of the robot’s center of mass, measured in upright posture.</a></li>
+<li><a class="reference internal" href="#based-on-htop-the-following-size-restrictions-apply">4.1.2. Based on Htop, the following size restrictions apply:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#weight-restrictions">4.2. Weight Restrictions</a></li>
+<li><a class="reference internal" href="#size-restrictions">4.3. Size Restrictions</a></li>
+<li><a class="reference internal" href="#sensors">4.4. Sensors</a></li>
+<li><a class="reference internal" href="#communication-and-control">4.5. Communication and Control</a><ul>
+<li><a class="reference internal" href="#robots-participating-in-the-humanoid-league-competitions-must-act-autonomously-while-a-competition-is-running-no-external-power-supply-teleoperation-remote-control-or-remote-brain-of-any-kind-is-allowed">4.5.1. Robots participating in the Humanoid League competitions must act autonomously while a competition is running. No external power supply, teleoperation, remote control, or remote brain of any kind is allowed.</a></li>
+<li><a class="reference internal" href="#robots-may-communicate-only-via-the-wireless-network-provided-by-the-organizers-which-must-support-the-referee-box-the-total-bandwidth-of-the-robots-belonging-to-one-team-may-not-exceed-1-mbit-s-the-robots-must-not-rely-on-availability-or-quality-of-the-wireless-network-they-must-be-able-to-play-if-the-network-is-not-available-or-of-low-quality-only-robots-are-allowed-to-communicate-by-wlan-any-other-computers-of-team-members-are-only-allowed-to-communicate-by-tethered-lan-no-other-wireless-communication-is-allowed-onsite-all-other-wireless-hardware-must-be-deactivated-a-team-may-be-disqualified-if-one-of-the-team-members-violates-this-rule">4.5.2. Robots may communicate only via the wireless network provided by the organizers which must support the referee box. The total bandwidth of the robots belonging to one team may not exceed 1 Mbit/s. The robots must not rely on availability or quality of the wireless network. They must be able to play if the network is not available or of low quality. Only robots are allowed to communicate by WLAN. Any other computers of team members are only allowed to communicate by tethered LAN. No other wireless communication is allowed onsite. All other wireless hardware must be deactivated. A team may be disqualified if one of the team members violates this rule.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="number_of_players.html" title="previous chapter">3. The Number of Players</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/design_of_robots.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, TOROBots.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/design_of_robots.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

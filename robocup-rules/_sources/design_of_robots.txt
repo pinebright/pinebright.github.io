@@ -1,0 +1,87 @@
+The Design of the Robots
+========================
+
+Robots participating in the Humanoid League competitions must have a human-like body plan, as shown in Fig. 4.
+They must consist of two legs, two arms, and one head, which are attached to a trunk.
+The robots must be able to stand upright on their feet and to walk on their legs.
+The only allowed modes of locomotion are bipedal walking and running.
+
+All actions of the robots must be kinematically equivalent to humanoid motions.
+
+
+Robot Height
+------------
+
+Htop is defined as the height of the robot when standing upright (with fully extended knees, cf. Fig. 4 right) and Hcom denotes the height of the robot’s center of mass, measured in upright posture.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Based on Htop, the following size restrictions apply:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* 40cm ≤ Htop ≤ 90cm to play in the KidSize class,
+* 80cm ≤ Htop ≤ 140cm to play in the TeenSize class,
+* 130cm ≤ Htop ≤ 180cm to play in the AdultSize class.
+
+
+Weight Restrictions
+-------------------
+
+* The maximum weight for robots allowed to play in the TeenSize class is 20 kg.
+* The minimum weight for robots allowed to play in the AdultSize class is 10 kg.
+
+
+Size Restrictions
+-----------------
+
+All robots participating in the Humanoid League must comply with the following restric- tions:
+
+#. Each foot must fit into a rectangle of area (2.2 · Hcom)2/32.
+#. Considering the rectangle enclosing the convex hull of the foot, the ratio between
+the longest side of the rectangle and the shortest one, shall not exceed 2.5.
+#. The robot must fit into a cylinder of diameter 0.55· Htop.
+#. The sum of the lengths of the two arms and the width of the torso at the shoulder must be less than 1.2· Htop.
+   The length of an arm is defined as the sum of the maximum length of any link that forms part of the arm.
+   Both arms must be the same length.
+#. The robot does not possess a configuration where it is extended longer than 1.5·Htop .
+#. The length of the legs Hleg, including the feet, satisfies 0.35·Htop ≤ Hleg ≤ 0.7·Htop .
+#. The height of the head Hhead, including the neck, satisfies 0.05·Htop ≤ Hhead ≤ 0.25·Htop.
+   Hhead is defined as the vertical distance from the axis of the first arm joint at the shoulder to the top of the head.
+#. The leg length is measured while the robot is standing up straight.
+   The length is measured from the first rotating joint where its axis lies in the plane parallel to the standing ground to the tip of the foot.
+
+
+Sensors
+-------
+
+Teams participating in the Humanoid League competitions are encouraged to equip their robots with sensors that have an equivalent in human senses.
+These sensors must be placed at a position roughly equivalent to the location of the human’s biological sensors.
+In particular,
+
+#. The only active external sensor allowed is sound (“human-like” with respect to volume and frequency) with one loudspeaker on the robot.
+   The loudspeaker may be placed in the head, neck or trunk of the robot.
+   Any other active sensor (emitting light, sound, or electromagnetic waves into the environment in order to measure reflections) is not allowed.
+#. External2 sensors, such as cameras and up to two microphones, may not be placed in the legs or arms or the torso of the robots.
+   They must be placed in the robot’s head and above any neck joint.
+#. The field of view of the robots is limited at any time to 180 degrees.
+   This means that the maximum angle between any two points in the overlap of the field of view of all cameras mounted on the robot must be less than 180 degrees.
+   Also the pan-tilt motion of the head and the cameras mounted on the robot’s head is restricted to be more human like not only with respect to the field of view but also to the range of motion of the neck joints.
+   Therefore, the mechanism to pan the camera is limited to 270 degree pan which means ± 135 degrees from the position looking straight ahead.
+   The mechanism to tilt the camera is limited to ± 90 degrees (measured from the horizontal line).
+   Furthermore, if positioned at the center mark the robot may not be able to see both goals in any tilt angle and in any standing or walking posture of the robot.
+   “Field of view” refers to the field of view of all cameras together and of how much of the soccer field all cameras together can view at most at one time.
+   By how much the soccer field can be viewed by the robot at most one time is defined by a half sphere with its center axis pointing in the forward direction with respect to the robot’s frontal plane as shown in Figure 5.
+#. The number of cameras is limited to a stereo vision setup (i.e., max. 2 cameras with a large overlap) only. Monocular vision is also allowed.
+#. Touch sensors, force sensors, and temperature sensors may be placed at any posi- tion on the robot.
+#. Sensors inside the robot may measure all quantities of interest, including (but not limited to) voltages, currents, forces, movements, accelerations, magnetic field and rotational speeds.
+   They can be at any position inside the robot.
+
+
+Communication and Control
+-------------------------
+
+Robots participating in the Humanoid League competitions must act autonomously while a competition is running. No external power supply, teleoperation, remote control, or remote brain of any kind is allowed.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Robots may communicate only via the wireless network provided by the organizers which must support the referee box. The total bandwidth of the robots belonging to one team may not exceed 1 Mbit/s. The robots must not rely on availability or quality of the wireless network. They must be able to play if the network is not available or of low quality. Only robots are allowed to communicate by WLAN. Any other computers of team members are only allowed to communicate by tethered LAN. No other wireless communication is allowed onsite. All other wireless hardware must be deactivated. A team may be disqualified if one of the team members violates this rule.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

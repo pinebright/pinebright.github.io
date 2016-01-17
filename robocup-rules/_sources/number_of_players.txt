@@ -1,0 +1,36 @@
+The Number of Players
+=====================
+
+A match is played by two teams, each consisting of not more than four players in KidSize and not more than two players in TeenSize, one of whom must be designated as goalkeeper.
+A match may not start if either team consists of less than one player.
+
+
+Incapable Players
+-----------------
+
+Players not capable of play (e.g. players not able to walk on two legs, players not able to stand, or players with obvious malfunctions) are not permitted to participate in the game.
+They must be removed from the field.
+It is up to the referee to judge whether a player is capable of play.
+The referee may ask the team leader of a player suspected to be incapable of play to demonstrate playing ability at any time.
+A field player that is not able to get back into a stable standing or walking posture from a fall within 20 seconds will be removed from the field for 30 seconds removal penalty and has to reenter the field according to 5.9.
+
+
+Substitutions
+-------------
+
+Up to two players per game can be substituted by other players of the same team.
+The referee must be informed prior to the substitution.
+A substitute only enters the field after the player being replaced left the field and after receiving a signal from the referee.
+Any of the other players may change places with the goalkeeper, provided that the referee is informed before the change is made and that the change is made during a stoppage of the match.
+Exchanging a field player with a goalie does not count as substitution.
+Changing places/roles between a field player and a goalie does not count as substitution.
+
+
+Temporal Absence
+----------------
+
+Servicing robots on the playing field is not permitted.
+A robot may be taken out of the field for service, after receiving permission from the referee.
+Taking out a robot for service does not count as a substitution.
+A serviced robot may not come into play again before 30 s elapsed after it was taken out.
+It has to enter the field according to 5.9.

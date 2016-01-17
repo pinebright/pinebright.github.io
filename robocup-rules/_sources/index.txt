@@ -1,0 +1,34 @@
+.. RoboCup Soccer Humanoid League Rules and Setup documentation master file, created by
+   sphinx-quickstart on Thu Jan 14 23:32:05 2016.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+RoboCup Soccer Humanoid League Rules and Setup
+==============================================
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   field_of_play
+   ball
+   number_of_players
+   design_of_robots
+   referee
+   assistant_referee
+   duration_of_match
+   start_and_restart_of_play
+   ball_in_and_out_of_play
+   method_of_scoring
+   offside
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

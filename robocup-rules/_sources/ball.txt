@@ -1,0 +1,10 @@
+The Ball
+========
+
+Each size class uses its own ball which is at least 50% white.
+The remaining colors of the ball are undefined but should not contain significant amounts of cyan, magenta, field green or white.
+
+#. KidSize: Orange Ball with a diameter of approx.
+   10cm FIFA size 1 ball (diameter approx. 13cm, weight approx. 150g).
+#. TeenSize: FIFA size 3 ball, at least 50% orange.
+#. AdultSize: FIFA size 5 ball, at least 50% orange.

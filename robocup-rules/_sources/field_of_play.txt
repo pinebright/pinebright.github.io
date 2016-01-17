@@ -1,0 +1,46 @@
+The Field of Play
+=================
+
+The competitions take place on a rectangular field, which contains two goals and field lines, as shown in Fig. 1.
+
+
+Playing Surface
+---------------
+
+The field consists of a flat and even ground which is covered with green carpet artificial green grass with a yarn length of approximately 30mm.
+The white lines are 5 cm wide.
+Line segments of 10 cm length are used to denote penalty mark and the kick-off position (center mark).
+The longer outer field lines are called touch lines, whereas the shorter outer field lines are called goal lines.
+The field is surrounded by a border strip, which is also covered with green carpet artificial grass.
+The world outside the border strip is undefined.
+
+
+Goals
+-----
+
+A goal is placed in the middle of each goal line.
+Both of the goals have a colored yellow white frame.
+Nets in grey or black color are attached to the goals and the ground behind the goal, provided that they are properly supported and do not interfere with the goalkeeper.
+The mesh size for this net is suggested to be less than 4 cm in order to keep the risk of entanglement low.
+The upper side of the goal should not be covered by a net in order to allow for easy access to the robots from above.
+The goals for the KidSize field have a crossbar at a height of 110 cm.
+The height of the net is 100 cm and it is open from the top (see Fig. 2).
+The TeenSize and AdultSize goals have a crossbar at height of 180 cm and the height of the net is 120 cm.
+The goal posts and crossbars are cylindrical and have a diameter of 10 cm (see Fig. 2).
+
+
+Lighting
+--------
+
+The lighting conditions depend on the actual competition site.
+Lighting temperature may differ significantly from previous years, as only ceiling lights are used.
+The field is illuminated presuming a sufficient bright and constant lighting on the field (i.e. no daylight).
+
+
+People Area
+-----------
+
+Around the field of play (Figure 1) a field zone is defined on site in which only the referee (Section 5), the assistant referees (Section 6) and the two robot handlers are allowed to stay during the game.
+All persons in the field zone must not show colors below their waist that are the same as or similar to any of the defined colors on the field.
+The field zone must give sufficient space to the referees and robot handlers for passing behind the goals.
+All other people (including other team members, organizational staff, representatives of the press and the media etc.) must stay outside the field zone.
